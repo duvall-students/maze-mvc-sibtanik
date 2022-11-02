@@ -66,7 +66,7 @@ public class MazeDisplay extends Application {
 		// Initializing logic state
 		int numRows = NUM_ROWS;
 		int numColumns = NUM_COLUMNS;
-		mazeController = new MazeController(numRows, numColumns);
+		mazeController = new MazeController(numRows, numColumns, this);
 
 		
 		// Initializing the gui

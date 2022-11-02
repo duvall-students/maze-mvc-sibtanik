@@ -32,10 +32,11 @@ public class MazeController {
 	private MazeDisplay mazeDisplay;
 
 	
-	public MazeController(int numRows, int numColumns) {
+	public MazeController(int numRows, int numColumns, MazeDisplay thisDisplay) {
 		start = new Point(1,1);
 		goal = new Point(numRows-2, numColumns-2);
 		maze = new Maze(numRows, numColumns);
+		mazeDisplay = thisDisplay;
 	}
 	
 	/*
